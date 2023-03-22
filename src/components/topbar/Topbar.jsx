@@ -2,8 +2,9 @@ import React from 'react'
 import './topbar.css'
 import {NotificationsNone, Language, Settings} from '@mui/icons-material'
 
-export default function Topbar() {
+export default function Topbar({children}) {
   return (
+    <>
     <div className='topbar'>
         <div className="topbarWrapper">
             <div className="topLeft">
@@ -25,5 +26,6 @@ export default function Topbar() {
             </div>
         </div>
     </div>
+    </>
   )
 }
